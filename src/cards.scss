@@ -7,8 +7,10 @@ body, html {
 }
 
 .card {
-  width:280px;
-  display: block;
+  width:240px;
+  display: table-cell;
+position:relative;
+box-sizing:inherit;
   margin: 60px auto;
   box-shadow: 2px 1px 10px 5px darken(#341cac, 5%);
   transition: .25s;
@@ -22,11 +24,32 @@ body, html {
     }
   }
 }
+@media only screen and (max-width: 600px) {
+  .card {
+    width:400px;
+    display: table-cell;
+  position:relative;
+  box-sizing:inherit;
+    margin: 60px auto;
+    box-shadow: 2px 1px 10px 5px darken(#341cac, 5%);
+    transition: .25s;
+    
+    &:hover {
+      box-shadow: 10px 5px 40px 20px darken(#341cac, 10%);
+      cursor: pointer;
+      
+      .button-primary {
+        transform: translate(10px, 0);
+      }
+    }
+  }
+}
+
 
 .card-header {
   height: 150px;
   width: 100%;
-  padding: 15px;
+  padding: 40px;
   width:100%;
   background-size:cover;
   color:#fff;
@@ -38,11 +61,36 @@ body, html {
 }
 
 .card-body {
-  padding: 15px;
+  padding: 0px;
   background-color:#fff;
   width:100%;
+  font-size:14px;
+text-align:center;
 }
-
+.cost-li{
+  width:100%;
+  padding:15px;
+  min-height: 106px;
+  background-color: #f1f1f1;
+  text-align: center;
+  font-size: 14px;
+  list-style-type:none;
+}
+.instabox-foot{
+  padding:15px;
+  list-style-type:none;
+}
+.uni-title{
+  color:#6163ff!important;
+}
+.list{
+  list-style-type:none;
+  padding:0px;
+  margin:0px;
+}
+.sems{
+  font-size: 10px;
+}
 .date {
   font-size: 11px;
   font-weight: 600;
@@ -76,4 +124,8 @@ body, html {
   fon-size: 12px;
   text-decoration: none;
   display:block;
+}
+
+.cont{
+  display:table
 }

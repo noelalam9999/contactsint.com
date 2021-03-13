@@ -18,7 +18,17 @@ padding-left:20px;
 	border:1px solid #f1f1f1;
 	
 }
-
+.products{
+	margin: 0 auto; /* Added */
+        float: none; /* Added */
+}
+.overlay{
+	padding-top:100px;
+}
+.unihero-content{
+	max-height:250px;
+	max-width:1920px;
+}
 @include media( '>medium' ) {
 
 	.features-split {
@@ -33,3 +43,25 @@ padding-left:20px;
 		}
 	}
 }
+#overlay{
+	position: absolute; 
+   top: 200px; 
+   left: 0; 
+   width: 100%;
+   z-index:1;
+}
+.padding-15p{
+	padding-bottom: 15px;
+}
+.font-color-hero{
+color:white;
+text-shadow: 0 0 3px black
+}
+.font-color-uni-hero{
+	color:	#CBC3E3;
+	text-shadow: 0 0 3px black
+	}
+
+	.menu-text-color{
+		color: black!important;
+	}

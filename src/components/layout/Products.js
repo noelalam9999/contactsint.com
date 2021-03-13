@@ -18,9 +18,9 @@ class Products extends Component {
           <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
 
           </div>
-      <div  className=" split-item-content card-padding fw-600 tt-u mb-8" key={product.id}>
+      <div className="cont split-item-content card-padding fw-600 tt-u mb-8" key={product.id}>
        
-       <Card image={`products/${product.sku}_2.jpg`} title={product.title} text={product.title} ugFee={product.ugFee} pgFee={product.pgFee} diplomaFee={product.diplomaFee} semesterStart1={product.semesterStart1} semesterStart2={product.semesterStart2} AcommodationCost={product.AcommodationCost} ranking={product.price}/>
+       <Card  image={`products/${product.sku}_2.jpg`} title={product.title} text={product.title} ugFee={product.ugFee} pgFee={product.pgFee} diplomaFee={product.diplomaFee} semesterStart1={product.semesterStart1} semesterStart2={product.semesterStart2} AcommodationCost={product.AcommodationCost} ranking={product.price}/>
         {/* <div className="thumbnail text-center">
           <a
             href={`#${product.id}`}

@@ -50,6 +50,9 @@ const SectionHeader = ({
             {data.paragraph &&
               <p className="m-0">{data.paragraph}</p>
             }
+             {data.paragraph &&
+              <p className="m-0">{data.paragraph1}</p>
+            }
           </div>
         </div>
       }

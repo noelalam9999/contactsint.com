@@ -7,8 +7,11 @@ import store from "./store";
 import "./uniPage.css";
 import Hero from "./components/sections/HeroUni.js"
 import Copyright from "./components/Copyright";
+import FeaturesTiles from "./components/sections/FeaturesTilesAboutus";
+import FeaturesSplit from "./components/sections/FeaturesSplitAboutus";
+import ProductsPartners from "./components/ProductsPartners";
 
-class Uni extends Component {
+class InstitutePartners extends Component {
   render() {
     return (
       <>
@@ -17,23 +20,14 @@ class Uni extends Component {
         <div className="container">
          
        
-          <div className="justify-content-center row">
-            <div className="col-md-3">
-              <Filter />
-            </div> 
-            
-            <div className="col-md-9">
-            <div className="justify-content-center section"> 
-            <div className="justify-content-center"><Products /></div>
-              
-            </div>
-            </div>
-            
-            <div >
+          
+         
+           <ProductsPartners/>
+         
+          
               {/* <Basket />
               <Copyright /> */}
-            </div>
-          </div>
+            
         </div>
       </Provider>
       </>
@@ -41,4 +35,4 @@ class Uni extends Component {
   }
 }
 
-export default Uni;
+export default InstitutePartners;

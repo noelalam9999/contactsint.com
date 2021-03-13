@@ -108,26 +108,39 @@ const Header = ({
                 <div className="header-nav-inner">
                   <ul className={
                     classNames(
-                      'list-reset text-xxs',
+                      'list-reset menu-text-color text-xxs',
                       navPosition && `header-nav-${navPosition}`
                     )}>
                     <li>
-                      <Link to="/university" onClick={closeMenu}>Universities</Link>
+                    <Link className="menu-text-color" to="/" onClick={closeMenu}>Home</Link>
                     </li>
                     <li>
-                      <Link to="#0" onClick={closeMenu}>Events</Link>
+                    <Link className="menu-text-color" to="/about-us" onClick={closeMenu}>About Us</Link>
                     </li>
                     <li>
-                      <Link to="#0" onClick={closeMenu}>Services</Link>
+                    <Link className="menu-text-color" to="/university" onClick={closeMenu}>Study Abroad</Link>
+                      
                     </li>
                     <li>
-                      <Link to="#0" onClick={closeMenu}>Affiliations</Link>
+                      <Link className="menu-text-color" to="/recruitment-partners" onClick={closeMenu}>Recruitment Partners</Link>
                     </li>
                     <li>
-                      <Link to="#0" onClick={closeMenu}>About Us</Link>
+                      <Link className="menu-text-color" to="/institute-partners" onClick={closeMenu}>Institute Partners</Link>
+                    </li>
+                    <li>
+                      <Link className="menu-text-color" to="/events" onClick={closeMenu}>Events</Link>
                     </li>
                   </ul>
                   {!hideSignin &&
+                    <ul
+                      className="list-reset header-nav-right"
+                    >
+                      
+                      <li>
+                        <Link to="#0" className="button button-primary button-wide-mobile button-sm" onClick={closeMenu}>Sign in</Link>
+                      </li>
+                    </ul>}
+                    {!hideSignin &&
                     <ul
                       className="list-reset header-nav-right"
                     >

@@ -43,12 +43,12 @@ class Filter extends Component {
               }}
             >
               <option value="">ALL</option>
-              <option value="x">XS</option>
-              <option value="s">S</option>
-              <option value="m">M</option>
+              <option value="Australia">Australia</option>
+              <option value="Canada">Canada</option>
+              {/* <option value="m">M</option>
               <option value="l">L</option>
               <option value="xl">XL</option>
-              <option value="xxl">XXL</option>
+              <option value="xxl">XXL</option> */}
             </select>
           </label>
           </div>

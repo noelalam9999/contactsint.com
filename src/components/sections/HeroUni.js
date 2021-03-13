@@ -59,12 +59,12 @@ const Hero = ({
       className={outerClasses}
     >
       <div style={{ 
-      backgroundImage: `url("https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1614593987/2_ning63.png")` 
+      backgroundImage: `url("https://res.cloudinary.com/american-international-university-bangladesh/image/upload/v1614694034/28466_ke9gr5.png")` 
     }}  className="container-sm">
         <div  className={innerClasses}>
-          <div  className="hero-content">
-            <h3 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
-              Search from the widest array of Universities
+          <div  className="unihero-content">
+            <h3 className="font-color-uni-hero  overlay mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
+              Choose from the widest array of Universities
               {/* <span className="text-color-primary">Start your Journey With us today</span> */}
             </h3>
             <div className="container-xs">
